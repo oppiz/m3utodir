@@ -18,7 +18,7 @@ def main():
     output_dir = r"C:\Users\zippo\Desktop\MUSIC"
 
     if os.path.exists(output_dir) & os.path.exists(playlist_file): 
-        print("all is good")
+        print("Paths look good, moving files:")
         with open(playlist_file, 'r') as f:
             for line in f:
                 if line.startswith('#'):
